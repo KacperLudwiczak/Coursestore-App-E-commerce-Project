@@ -1,6 +1,6 @@
 import { Box, Divider, Table, TableBody, TableCell, TableContainer, TableRow, Typography } from "@mui/material";
 import { currencyFormat } from "../../lib/util";
-import { ConfirmationToken } from "@stripe/stripe-js";
+import type { ConfirmationToken } from "@stripe/stripe-js";
 import { useBasket } from "../../lib/hooks/useBasket";
 
 type Props = {
@@ -58,7 +58,8 @@ export default function Review({confirmationToken}: Props) {
                                     sx={{borderBottom: '1px solid rgba(224, 224, 224, 1)'}}> 
                                     <TableCell sx={{py: 4}}>
                                         <Box display='flex' gap={3} alignItems='center'>
-                                            <img src={item.pictureUrl} 
+                                            <img 
+                                                src={`https://localhost:5001${item.pictureUrl}`}
                                                 alt={item.name} 
                                                 style={{width: 40, height: 40}} 
                                             />
