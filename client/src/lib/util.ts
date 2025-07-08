@@ -10,3 +10,13 @@ export function filterEmptyValues(values: object) {
         )
     )
 }
+
+export const formatAddressString = (address: ShippingAddress) => {
+    return `${address?.name}, ${address?.line1}, ${address?.city}, ${address?.state}, 
+            ${address?.postal_code}, ${address?.country}`
+}
+
+export const formatPaymentString = (card: PaymentSummary) => {
+    return `${card?.brand?.toUpperCase()}, **** **** **** ${card?.last4}, 
+            Exp: ${card?.exp_month}/${card?.exp_year}`
+}
