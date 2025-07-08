@@ -39,13 +39,13 @@ export default function UserMenu({ user }: Props) {
                 onClose={handleClose}
                 TransitionComponent={Fade}
             >
-                <MenuItem component={Link} to='/orders'>
+                <MenuItem>
                     <ListItemIcon>
                         <Person />
                     </ListItemIcon>
                     <ListItemText>My profile</ListItemText>
                 </MenuItem>
-                <MenuItem>
+                <MenuItem component={Link} to='/orders'>
                     <ListItemIcon>
                         <History />
                     </ListItemIcon>
