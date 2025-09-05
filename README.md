@@ -1,5 +1,7 @@
 # Coursestore 🎓
 
+![screenshot](client/public/coursestore.png)
+
 ## Project Description
 
 This is a comprehensive web application designed for **purchasing courses online**, built using **React.js** for the frontend and **ASP.NET Core** for the backend. The application leverages **SQL Lite** to store user and courses data, while **Material UI** ensures a responsive and visually appealing user interface. Additionally, **Stripe Service** is integrated to facilitate secure and efficient payment processing.
